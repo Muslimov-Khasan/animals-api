@@ -7,7 +7,7 @@ fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10')
 
 function renderAnimals(array) {
     elAnimalsList.innerHTML = null;
-    let newFragment = document.createDocumentFragment();
+    let elFragment = document.createDocumentFragment();
 
     for (const item of array) {
         const elTemplateClone = elTemplate.cloneNode(true);
@@ -16,7 +16,7 @@ function renderAnimals(array) {
         elTemplateClone.querySelector(".geo_range").textContent = item.geo_range;
         elTemplateClone.querySelector(".animals__titel").textContent = item.latin_name;
         elTemplateClone.querySelector(".lifespan").textContent = `lifespan: ${item.lifespan}`
-        newFragment.appendChild(elTemplateClone);
+        elFragment.appendChild(elTemplateClone);
     }
-    elAnimalsList.appendChild(newFragment);
+    elAnimalsList.appendChild(elFragment);
 }
