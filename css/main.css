@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.animals__list {
+    margin: 0 auto;
+} 
+
+.image_link{
+    border-radius: 30px;
+}
+
+.animals__item{
+    margin-left:44px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    padding: 12px 12px;
+    box-shadow: 5px 10px #888888;
+
+}
+
+.image_link{
+    margin: 0 auto;
+}
+
+.lifespan{
+    font-size: 20px;
+}
